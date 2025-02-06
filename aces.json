@@ -1,0 +1,76 @@
+{
+  "virtualkeyboard": {
+    "conditions": [
+      {
+        "id": "callback-Input",
+        "scriptName": "callbackInput",
+        "highlight": true,
+        "isTrigger": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "in-keyboard",
+        "scriptName": "inkeyboard",
+        "highlight": true
+      },
+      {
+        "id": "rem-keyboard",
+        "scriptName": "remkeyboard",
+        "highlight": true
+      },
+      {
+        "id": "change-SetupData",
+        "scriptName": "changeSetupData",
+        "highlight": true,
+        "params": [
+          {
+            "id": "setupdata",
+            "type": "string",
+            "initialValue": "\"\""
+          }
+        ]
+      },
+      {
+        "id": "change-LayoutName",
+        "scriptName": "changeLayoutName",
+        "highlight": true,
+        "params": [
+          {
+            "id": "layoutname",
+            "type": "string",
+            "initialValue": "\"\""
+          }
+        ]
+      },
+      {
+        "id": "clear-Inp",
+        "scriptName": "clearInp",
+        "highlight": true
+      }
+    ],
+    "expressions": [
+      {
+        "id": "getLastKey",
+        "expressionName": "getLastKey",
+        "scriptName": "getLastKey",
+        "highlight": true,
+        "returnType": "string"
+      },
+      {
+        "id": "getInput",
+        "expressionName": "getInput",
+        "scriptName": "getInput",
+        "highlight": true,
+        "returnType": "string"
+      },
+      {
+        "id": "getLayoutName",
+        "expressionName": "getLayoutName",
+        "scriptName": "getLayoutName",
+        "highlight": true,
+        "returnType": "string"
+      }
+    ]
+  }
+}

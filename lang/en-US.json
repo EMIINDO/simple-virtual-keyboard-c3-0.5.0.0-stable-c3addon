@@ -1,0 +1,77 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for Simple Virtual Keyboard Plugin",
+  "text": {
+    "plugins": {
+      "massivecube_simplekeyboard": {
+        "name": "Simple Virtual Keyboard",
+        "description": "Simple virtual Keyboard.",
+        "help-url": "https://codesandbox.io/s/github/hodgef/simple-keyboard-js-demos/tree/mobile/",
+        "properties": {},
+        "aceCategories": {
+          "virtualkeyboard": "Virtual Keyboard"
+        },
+        "conditions": {
+          "callback-Input": {
+            "list-name": "On any key pressed",
+            "display-text": "On any key pressed",
+            "description": "On any key pressed"
+          }
+        },
+        "actions": {
+          "in-keyboard": {
+            "list-name": "Create Keyboard",
+            "display-text": "Create Keyboard",
+            "description": "Create Keyboard."
+          },
+          "rem-keyboard": {
+            "list-name": "Remove Keyboard",
+            "display-text": "Remove Keyboard",
+            "description": "Remove Keyboard."
+          },
+          "change-SetupData": {
+            "list-name": "Setup Keyboard",
+            "display-text": "Setup Keyboard: {0}",
+            "description": "Setup Keyboard.",
+            "params": {
+              "setupdata": {
+                "name": "Setup",
+                "desc": "Setup / Settings"
+              }
+            }
+          },
+          "change-LayoutName": {
+            "list-name": "Set Layout-Name",
+            "display-text": "Set Layout-Name to {0}",
+            "description": "Set Layout-Name.",
+            "params": {
+              "layoutname": {
+                "name": "Layoutname",
+                "desc": "Layoutname"
+              }
+            }
+          },
+          "clear-Inp": {
+            "list-name": "Clear Input",
+            "display-text": "Clear Input",
+            "description": "Clear Input."
+          }
+        },
+        "expressions": {
+          "getLastKey": {
+            "description": "Get last key.",
+            "translated-name": "GetLastKey"
+          },
+          "getInput": {
+            "description": "Get Input.",
+            "translated-name": "GetInput"
+          },
+          "getLayoutName": {
+            "description": "GetLayoutname.",
+            "translated-name": "GetLayoutname"
+          }
+        }
+      }
+    }
+  }
+}
